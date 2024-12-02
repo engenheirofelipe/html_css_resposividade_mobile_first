@@ -1,0 +1,35 @@
+.menu_burguer{
+    width: 24px;
+    height:24px;
+    background-image: url(/img/Menu.svg);
+    display: inline-block;
+}
+.header_container{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+ 
+}
+.container{
+    display: flex;
+    align-items: center;
+    padding:0 15px;
+    gap:10px;
+}
+.lista_menu{
+    display:none;
+    position: absolute;
+    top:100%;
+   
+ 
+}
+.menu_botao:checked ~ .lista_menu{
+    display: block;
+}
+.titulo, .item{
+    padding:10px;
+    background-color: var(--branco);
+}
+.titulo{color: var(--laranja)}
